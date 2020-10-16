@@ -16,7 +16,6 @@ ActiveRecord::Schema.define(version: 2020_10_16_170740) do
   enable_extension "plpgsql"
 
   create_table "base_gadgets", force: :cascade do |t|
-    t.integer "user_id"
     t.string "name"
     t.string "icon_image"
     t.string "content_type"
