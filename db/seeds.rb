@@ -33,7 +33,7 @@ end
 
 
 
-Gadget.create(user_id: "1", name: "test", icon_image: icons[4], content_type: 'test', content: '')
+Gadget.create(user_id: "1", name: "test", icon_image: icons[4], content_type: 'test', content: 'This is a test')
 
 BaseGadget.create(name: "myDiary", content_type: "base", content: " ", icon_image: "https://win98icons.alexmeub.com/icons/png/write_red.png")
 BaseGadget.create(name: "E-mail", content_type: "base", content: " ", icon_image: "https://win98icons.alexmeub.com/icons/png/mailbox_world-0.png")
