@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :folders
   resources :icons
   resources :base_gadgets
   resources :journals

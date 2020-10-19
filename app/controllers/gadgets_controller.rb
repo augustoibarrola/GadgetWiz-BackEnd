@@ -1,4 +1,6 @@
 class GadgetsController < ApplicationController
+  before_action :set_gadget, only: [:update, :destroy]
+  
     def index
         @gadgets = Gadget.all 
         render json: @gadgets
@@ -12,7 +14,7 @@ class GadgetsController < ApplicationController
         else
           render json: @gadget.errors, status: :unprocessable_entity
         end
-      end
+    end
 
       def update
         if @gadget.update(gadgets_params)
@@ -27,7 +29,11 @@ class GadgetsController < ApplicationController
       end
 
       private 
+      def set_gadget
+        @gadget = Gadget.find(params[:id])
+      end
+
       def gadgets_params
-        params.require(:gadget).permit(:content, :source, :image_url, :reporter, :topic, :review_rating)
+        params.require(:gadget).permit(:content, :user_id, :icon_image, :content_type, :name)
       end
 end

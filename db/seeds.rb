@@ -32,9 +32,17 @@ icons.each do |icon|
 end
 
 
+Folder.create(name: "desktop", icon_image: "https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs_2k-0.png", content_type: "desktop")
+Folder.create(name: "images", icon_image: "https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs_2k-0.png", content_type: "folder")
 
-Gadget.create(user_id: "1", name: "test", icon_image: icons[4], content_type: 'test', content: 'This is a test')
+Folder.create(name: "test", icon_image:icons[3], content_type: "folder")
 
-BaseGadget.create(name: "myDiary", content_type: "base", content: " ", icon_image: "https://win98icons.alexmeub.com/icons/png/write_red.png")
-BaseGadget.create(name: "E-mail", content_type: "base", content: " ", icon_image: "https://win98icons.alexmeub.com/icons/png/mailbox_world-0.png")
-BaseGadget.create(name: "images", content_type: "base", content: " ", icon_image: "https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs_2k-0.png")
+Gadget.create(user_id: "1", folder_id:"1", name: "test-text", icon_image: icons[4], content_type: 'test', content: 'This is a test')
+Gadget.create(user_id: "1", folder_id:"1", name: "test-img", icon_image: 'https://www.pinclipart.com/picdir/big/324-3243882_mtvmusic-music-mtv-80s-aesthetic-aesthetics-tumblr-90s.png', content_type: 'image', content: 'https://www.pinclipart.com/picdir/big/324-3243882_mtvmusic-music-mtv-80s-aesthetic-aesthetics-tumblr-90s.png')
+
+Gadget.create(user_id: "1", folder_id:"2", name: "text-bro", icon_image: icons[0], content_type: 'text', content: 'This is a test')
+Gadget.create(user_id: "1", folder_id:"2", name: "img-bro", icon_image: icons[6], content_type: 'image', content: icons[7])
+
+Gadget.create(user_id: "1", folder_id:"2",name: "test-bro", icon_image: 'https://www.pinclipart.com/picdir/big/324-3243882_mtvmusic-music-mtv-80s-aesthetic-aesthetics-tumblr-90s.png', content_type: 'image', content: 'https://www.pinclipart.com/picdir/big/324-3243882_mtvmusic-music-mtv-80s-aesthetic-aesthetics-tumblr-90s.png')
+BaseGadget.create(name: "myDiary", content_type: "base-diary", content: " ", icon_image: "https://win98icons.alexmeub.com/icons/png/write_red.png")
+BaseGadget.create(name: "E-mail", content_type: "base-email", content: " ", icon_image: "https://win98icons.alexmeub.com/icons/png/mailbox_world-0.png")

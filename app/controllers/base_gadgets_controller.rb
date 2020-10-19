@@ -28,7 +28,8 @@ class BaseGadgetsController < ApplicationController
 
       private 
       def base_gadgets_params
-        params.require(:base_gadget).permit(:content, :source, :image_url, :reporter, :topic, :review_rating)
+        # params.require(:base_gadget).permit(:content, :source, :image_url, :reporter, :topic, :review_rating)
+        params.require(:base_gadget).permit(:name, :icon_image, :content_type, :content)
       end
 
 end

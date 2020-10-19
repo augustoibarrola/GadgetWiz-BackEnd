@@ -1,4 +1,5 @@
 class JournalsController < ApplicationController
+
     def index
         @journals = Journal.all 
         render json: @journals
@@ -28,7 +29,7 @@ class JournalsController < ApplicationController
 
       private 
       def journal_params
-        params.require(:journal).permit(:content, :source, :image_url, :reporter, :topic, :review_rating)
+        params.require(:journal).permit(:user_id, :title, :content)
       end
     
 
