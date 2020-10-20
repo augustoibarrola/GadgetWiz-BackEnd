@@ -36,6 +36,10 @@ Folder.create(name: "desktop", icon_image: "https://win98icons.alexmeub.com/icon
 Folder.create(name: "images", icon_image: "https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs_2k-0.png", content_type: "folder")
 
 Folder.create(name: "test", icon_image:icons[3], content_type: "folder")
+Folder.create(name: "games", icon_image: "https://win98icons.alexmeub.com/icons/png/directory_fonts_shortcut-4.png", content_type: "folder")
+Gadget.create(user_id: "1", folder_id:"4", name: "snake", icon_image: "https://lh3.googleusercontent.com/0xcMLuiSn2BMOIvbJHpoCLOHsNmfw_EH1FQyxzu3v-jlFJDFI_T8UFHEAaeLVWpHl4M", content_type: 'snake-game', content: '')
+
+Gadget.create(user_id: "1", folder_id:"1", name: "paint", icon_image: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS8ykBRUISod7uwIkiIlLIgdlatdGa9LG8Stw&usqp=CAU", content_type: 'paint', content: '')
 
 Gadget.create(user_id: "1", folder_id:"1", name: "test-text", icon_image: icons[4], content_type: 'test', content: 'This is a test')
 Gadget.create(user_id: "1", folder_id:"1", name: "test-img", icon_image: 'https://www.pinclipart.com/picdir/big/324-3243882_mtvmusic-music-mtv-80s-aesthetic-aesthetics-tumblr-90s.png', content_type: 'image', content: 'https://www.pinclipart.com/picdir/big/324-3243882_mtvmusic-music-mtv-80s-aesthetic-aesthetics-tumblr-90s.png')

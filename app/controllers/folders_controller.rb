@@ -1,4 +1,5 @@
 class FoldersController < ApplicationController
+  before_action :set_folder, only: [:update, :destroy]
 
     def index
         @folders = Folder.all 

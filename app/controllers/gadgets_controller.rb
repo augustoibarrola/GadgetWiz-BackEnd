@@ -34,6 +34,6 @@ class GadgetsController < ApplicationController
       end
 
       def gadgets_params
-        params.require(:gadget).permit(:content, :user_id, :icon_image, :content_type, :name)
+        params.require(:gadget).permit(:content, :user_id, :icon_image, :content_type, :name, :folder_id)
       end
 end
