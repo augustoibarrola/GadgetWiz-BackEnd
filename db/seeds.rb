@@ -37,7 +37,7 @@ Folder.create(name: "images", icon_image: "https://win98icons.alexmeub.com/icons
 Folder.create(name: "apps", icon_image: "https://win98icons.alexmeub.com/icons/png/directory_fonts_shortcut-4.png", content_type: "folder")
 Folder.create(name: "Recycle Bin", icon_image: "https://win98icons.alexmeub.com/icons/png/conn_dialup_recbin_phone.png", content_type: "folder")
 
-Gadget.create(user_id: "1", folder_id:"3", name: "snake", icon_image: "https://lh3.googleusercontent.com/0xcMLuiSn2BMOIvbJHpoCLOHsNmfw_EH1FQyxzu3v-jlFJDFI_T8UFHEAaeLVWpHl4M", content_type: 'snake-game', content: '')
+Gadget.create(user_id: "1", folder_id:"3", name: "snake", icon_image: "https://w7.pngwing.com/pngs/295/458/png-transparent-snake-computer-icons-snake-game-animals-grass.png", content_type: 'snake-game', content: '')
 Gadget.create(user_id: "1", folder_id:"3", name: "paint", icon_image: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS8ykBRUISod7uwIkiIlLIgdlatdGa9LG8Stw&usqp=CAU", content_type: 'paint', content: '')
 Gadget.create(user_id: "1", folder_id:"1", name: "myDiary", content_type: "text", content: "Writing a diary is a good way to make sure your memories and experiences stay alive. It lets you keep track and reflect on your past and learn from your mistakes. It can also be tremendously therapeutic. Not only to record fun and adventurous moments, but also sad and scary times. It can be helpful to be able to document changes in your life.", icon_image: "https://win98icons.alexmeub.com/icons/png/write_red.png")
 BaseGadget.create(name: "E-mail", content_type: "base-email", content: " ", icon_image: "https://win98icons.alexmeub.com/icons/png/mailbox_world-0.png")
